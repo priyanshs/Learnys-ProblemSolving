@@ -1,3 +1,15 @@
+'''
+
+274025092001 (C) 
+Title: Are all strings equal? 
+Category: Strings - 2 
+Difficulty: Difficult (TCS NQT)
+Statement: 
+Two strings are provided to you as input, write a function to compare these strings together. Two strings are considered equal if they contain the same number of alphabets each and match the character count of each individual character present. 
+
+Note: The strings are not case sensitive, and thus conversions should be made. 
+
+'''
 def compare(str1, str2): 
   str1 = str1.lower()
   str2 = str2.lower()
