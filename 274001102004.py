@@ -9,6 +9,7 @@ As part of developing a new password management system, you are given the task t
 def left (S, M): 
     return S[-M+1:] + S[:M]
 def right (S, M): 
+    L = len(S)
     return S[L-M:] + S[:L-M]
 
 S,R = input().split()
