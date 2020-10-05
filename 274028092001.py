@@ -9,18 +9,21 @@ Each character in a string can be easily associated with an ASCII code. You have
 
 string = input().split()
 counter = -1
-if len(string[0]) > len(string[1]): 
-    counter = 1
-elif len(string[0]) <= len(string[1]): 
-    counter = 0
+if len(string) > 1 : 
+    if len(string[0]) > len(string[1]): 
+        counter = 1
+    elif len(string[0]) <= len(string[1]): 
+        counter = 0
+    else: 
+        counter = -1 
+    li = list()
+    for i in range(len(string[counter])): 
+        li.append( (ord(string[0][i]) - ord(string[1][i])) )
+    for i in range(len(string[counter]), len(string[~counter+2]) ): 
+        if ~counter+2 == 1: 
+            li.append( -1 * ord(string[~counter+2][i]))
+        else:
+            li.append(ord(string[~counter+2][i]))
+    print(li, sum(li))
 else: 
-    counter = -1 
-li = list()
-for i in range(len(string[counter])): 
-    li.append( (ord(string[0][i]) - ord(string[1][i])) )
-for i in range(len(string[counter]), len(string[~counter+2]) ): 
-    if ~counter+2 == 1: 
-        li.append( -1 * ord(string[~counter+2][i]))
-    else:
-        li.append(ord(string[~counter+2][i]))
-print(li, sum(li))
+    print("Mismatched Input")

@@ -10,13 +10,16 @@ string = input()
 l = len(string)
 oth = ""
 third = ""
-for i in range(l): 
-    if i % 3 == 0 and i % 5 == 0 : 
-        third += string[i]
-    elif i % 3 == 0: 
-        third += string[i]
-    elif i % 5 == 0: 
-        third += string[i]
-    else: 
-        oth += string[i]
-print(oth+third)
+if l >= 5: 
+    for i in range(l): 
+        if i % 3 == 0 and i % 5 == 0 : 
+            third += string[i]
+        elif i % 3 == 0: 
+            third += string[i]
+        elif i % 5 == 0: 
+            third += string[i]
+        else: 
+            oth += string[i]
+    print(oth+third)
+else: 
+    print("Invalid Input")

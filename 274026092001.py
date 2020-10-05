@@ -11,6 +11,7 @@ Note: The strings are case sensitive, and thus considerations should be made.
 def compare(str1, str2): 
   foo = sum([ord(i) for i in str1])
   bar = sum([ord(i) for i in str2])
+  print(foo, bar)
   if foo == bar : 
     return True
   else: 
