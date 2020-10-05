@@ -9,7 +9,7 @@ You are given a string as input. Arrange the string in alphabetical order and pr
 Note: The strings are case sensitive, and thus considerations should be made. 
 
 '''
-st = input()
+st = raw_input()
 li = list(st)
 li.sort()
 a = ""

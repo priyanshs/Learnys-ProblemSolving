@@ -31,8 +31,8 @@ def compare(str1, int1):
 
 
 
-str1 = 'aaabb' #input('E1:')
+str1 = 'tYYbFbjCIIWtttIHHHcRt'*2 #input('E1:')
 print(str1)
-int1 = 3 #int(input('E2:'))
+int1 = 2 #int(input('E2:'))
 
 print(compare(str1, int1))

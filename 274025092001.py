@@ -15,14 +15,15 @@ def compare(str1, str2):
   str2 = str2.lower()
   foo = dict()
   bar = dict()
+  if (str1 == '' or str2 == ''): 
+    return False
 
   if len(str1) == len(str2): 
-
     for each in set(str1):
       foo[each] = str1.count(each)
-    for each in set(str1):
-      bar[each] = str1.count(each)
-    
+    for each in set(str2):
+      bar[each] = str2.count(each)
+
     if foo.keys() == bar.keys(): 
       flag = 1 
       for each in foo.keys(): 
@@ -38,7 +39,7 @@ def compare(str1, str2):
     return False
 
 
-str1 = input()
-str2 = input()
+str1 = raw_input()
+str2 = raw_input()
 
 print(compare(str1,str2))

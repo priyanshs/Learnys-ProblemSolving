@@ -22,7 +22,8 @@ def compare(str1, str2):
           foo.append(each)
   return foo
 
-str1 = input()
-str2 = input()
+str1 = raw_input()
+str2 = raw_input()
 
-print(compare(str1, str2))
+lis = (compare(str1, str2))
+print(' '.join(lis))

@@ -8,10 +8,11 @@ You shall be given an alphanumeric string as an input. The task at hand is to de
 Note: The strings are case sensitive, and thus considerations should be made. 
 '''
 string = input()
+
 empty = ""
 for r in range(len(string)):
     if string[r].isnumeric() and r != 0: 
-        empty += string[r-1] * (int(r) - 2)
+        empty += string[r-1] * (int(string[r]) - 1)
     else: 
         empty += string[r]
 print(empty)
