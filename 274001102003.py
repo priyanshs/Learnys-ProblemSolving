@@ -10,6 +10,10 @@ Given a string S and a numeric M, rotate the string left and right by M and chec
 S, M = input().split()
 M = int(M)
 L = len(S)
-left  = S[-M+1:] + S[:M]
+left  = S[M:] + S[:M]
 right = S[L-M:] + S[:L-M]
 print(left, right)
+if left == left[::-1] or right == right[::-1]: 
+    print(True)
+else: 
+    print(False)

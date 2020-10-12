@@ -8,7 +8,7 @@ You are given two strings S and R. Find out if the pair of strings are anagrams 
 
 An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once. 
 '''
-S,R = input().split()
+S,R = raw_input().split()
 set1 = set()
 set2 = set()
 for each in set(S): 

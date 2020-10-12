@@ -15,7 +15,7 @@ def compare(str1, int1):
         count = 0 
         while j < len(str1):
             if str1[i] == str1[j]:
-                count += 1
+                count += 1  
                 j = j + 1
             else: 
                 break
@@ -25,7 +25,6 @@ def compare(str1, int1):
         else: 
             str2 += str1[i]
             i = i + 1
-        
     return str2
 
 

@@ -11,5 +11,6 @@ S = input()
 Q = list()
 for val in set(S): 
     Q.append(val*S.count(val))
+
 Q.sort()
 print(Q)

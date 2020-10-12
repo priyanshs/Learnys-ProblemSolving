@@ -5,7 +5,7 @@ Category: Strings - 1
 Difficulty: Easy (TCS NQT)
 Statement: 
 Given a simple string S of length more than 5 and words A and B as input. Split the string S at every occurrence of the A or B. 
-Note. Set(A) intersection with Set(B) = Null 
+Note. Set(A) intersection with Set(B) !i                            = Null 
 '''
 
 S, A, B = input().split()
@@ -19,4 +19,4 @@ for val in S :
 for each in temp : 
     if '' == each : 
         temp.remove('') 
-print(temp)
+print(' '.join(temp))

@@ -12,9 +12,7 @@ def fun(S,R):
         return S[:ind] + S[ind+len(R):] + S[ind:ind+len(R)] 
     else: 
         return -1 
-T = input().split()
-if len(T) > 1: 
-    S, R = T 
-    print(fun(S,R))
-else: 
-    print('Invalid Input')
+S = input()
+R = input()
+S, R = T 
+print(fun(S,R))
