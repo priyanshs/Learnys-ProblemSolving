@@ -8,8 +8,9 @@ You are given two strings S and R. Check if inserting the string R at the beginn
 '''
 S, R = input().split()
 if (S+R)[::-1] == S+R : 
-    print(True)
+    print(S+R)
 elif (R+S)[::-1] == R+S : 
-    print(True)
+    print(R+S)
 else:
     print(False)
+
