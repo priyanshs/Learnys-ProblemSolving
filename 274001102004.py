@@ -10,19 +10,19 @@ As part of developing a new password management system, you are given the task t
 def left (S, M): 
     #M = abs(M)
     return S[-M:] + S[:-M]
+
 def right (S, M): 
     L = len(S)
     return S[L-M:] + S[:L-M]
 
 S,R = input().split()
 mov = [int(i) for i in input().split()]
-for each in mov : 
-    if each > 0: 
-        S = right(S,each)
-    elif each < 0: 
-        S = left(S,each)
-    else: 
-        S = left(S,each)
+temp = sum(mov)
+temp = temp % len(S)
+if temp > 0 : 
+    S = right(S, temp)
+else: 
+    S = right(S, temp)
 
 if S == R : 
     print("Password Accepted")
